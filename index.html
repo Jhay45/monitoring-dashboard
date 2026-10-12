@@ -135,6 +135,25 @@
       font-size: 1.9rem;
     }
 
+    .dash-btn .button-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      line-height: 1.2;
+    }
+
+    .button-title {
+      font-size: 1.2rem;
+    }
+
+    .button-subtitle {
+      font-size: 0.75rem;
+      opacity: 0.9;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
     .btn-1 { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
     .btn-2 { background: linear-gradient(135deg, #10b981, #059669); }
     .btn-3 { background: linear-gradient(135deg, #f59e0b, #d97706); }
@@ -168,9 +187,12 @@
     </div>
 
     <div class="button-grid">
-      <button class="dash-btn btn-1" aria-label="Overview">
+      <button class="dash-btn btn-1" aria-label="NM Offset">
         <span class="icon">📊</span>
-        <span>Overview</span>
+        <span class="button-label">
+          <span class="button-title">NM</span>
+          <span class="button-subtitle">Offset</span>
+        </span>
       </button>
       <button class="dash-btn btn-2" aria-label="Systems">
         <span class="icon">🖥️</span>
